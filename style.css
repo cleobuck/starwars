@@ -1,0 +1,22 @@
+body {
+    font-family: 'Star Jedi', arial;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+    color: yellow;
+    background-color: black;
+  }
+.logo {
+    display: block;
+    width: 500px;
+    margin: auto;
+
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+p {
+    text-align: justify;
+}
