@@ -3,20 +3,103 @@ body {
     font-size: 48px;
     text-shadow: 4px 4px 4px #aaa;
     color: yellow;
-    background-color: black;
+    background: url("assets/background.jpg") center center/cover no-repeat;
+    overflow: hidden;
   }
+body, html {
+    height: 100%;
+}
+.ago{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+   
+    animation: blackago 5s ease-in-out 0.5s forwards;
+}
+@keyframes blackago {
+    0% {opacity: 1;}
+    95% {opacity: 1}
+    100% {opacity: 0;}
+}
+
+.ago p{
+    color: aqua;
+    animation: becodeago 5s ease-in-out 0.5s forwards;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    padding-top: 25%;
+    height: 100vw;
+    width: 100%;
+    opacity: 0;
+}
+@keyframes becodeago{
+    0% {opacity: 0}
+    5% {opacity: 1;}
+    95% {opacity: 1;}
+    100% {opacity: 0;}
+}
 .logo {
     display: block;
     width: 500px;
     margin: auto;
+    padding-top: 10%;
+    opacity: 0;
+    animation: alogo 10s linear 7.5s forwards;  
+}
+@keyframes alogo {
+    0% {transform: scale(2); opacity: 1}
+    100% {transform: scale(0); opacity: 1}
+}
+main{
+    height: 500px;
+  
+    margin: auto;
+    width: 100%;
+    perspective: 500px;
+    position: absolute;
+    top: 50%;
 
 }
+
+section {
+
+    width: 100%;
+    transform-origin: 50% 100%;
+
+    animation: amain 69s linear 15.5s forwards;
+    position: relative;
+    top: 700px;
+    width: 100%;
+    transform: rotateX(20deg) translateZ(500px)
+
+}
+@keyframes amain {
+    0% {
+        top: 700px; 
+
+    }
+    90% {opacity: 1}
+    100% {
+        opacity: 0;
+        top: -6000px; 
+        transform: rotateX(25deg) translateZ(-2000px);
+    }
+}
+
+
 h1 {
     text-align: center;
+
 }
 h2 {
     text-align: center;
+
 }
 p {
     text-align: justify;
+
+
 }
