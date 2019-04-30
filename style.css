@@ -73,7 +73,7 @@ section {
     position: relative;
     top: 700px;
     width: 100%;
-    transform: rotateX(20deg) translateZ(500px)
+    transform: rotateX(20deg) translateZ(600px);
 
 }
 @keyframes amain {
@@ -81,14 +81,16 @@ section {
         top: 700px; 
 
     }
-    90% {opacity: 1}
+    80% {
+        opacity: 1;
+    }
+
     100% {
         opacity: 0;
-        top: -6000px; 
+        top: -4000px; 
         transform: rotateX(25deg) translateZ(-2000px);
     }
 }
-
 
 h1 {
     text-align: center;
